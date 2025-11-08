@@ -1,0 +1,33 @@
+{
+  "originHash" : "dafcc0d7e83cf16d28e6ef33c48e440366401618cb1f127abd3dc60e1145dca1",
+  "pins" : [
+    {
+      "identity" : "carouselview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AnbalaganD/CarouselView.git",
+      "state" : {
+        "revision" : "070631bfccc19f8fcc5fa9428053893030fdb85b",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "expandabletext",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/n3d1117/ExpandableText",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2b0dd2f3d2870fe933ffe5c2ee057d2e9fa647e2"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "revision" : "2015fda791daa72c8058619545a593bf8c1dd59f",
+        "version" : "8.5.0"
+      }
+    }
+  ],
+  "version" : 3
+}

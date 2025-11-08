@@ -1,0 +1,39 @@
+//
+//  PlayListCard.swift
+//  InfinityMusic
+//
+//  Created by Saravanan T on 21/10/24.
+//
+
+import SwiftUI
+
+struct PlayListCard: View {
+    let playlist: Playlist
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            ForEach(playlist.images , id: \.imageType) { image in
+                if image.imageType == "s2" {
+                    CardView(url: image.imageUrl )
+                        .frame(width: 140, height: 140)
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
+                }
+            }
+            
+            Text(playlist.contentName)
+                .font(.system(size: 14, weight: .medium))
+                .foregroundStyle(.white)
+                .lineLimit(1)
+                .frame(width: 140, alignment: .leading)
+            HStack {
+                Text(playlist.contentType)
+                Circle()
+                    .frame(width: 4, height: 4)
+                Text("\(playlist.duration)")
+            }
+            .font(.system(size: 14, weight: .regular))
+            .foregroundStyle(.white.opacity(0.70))
+            .frame(width: 140, alignment: .leading)
+            .lineLimit(1)
+        }
+    }
+}
